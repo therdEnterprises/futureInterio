@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  
+  mobileMenuVisible = false;
+
+  toggleMobileMenu() {
+    this.mobileMenuVisible = !this.mobileMenuVisible;
+  }
 
 }
