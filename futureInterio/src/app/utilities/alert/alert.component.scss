@@ -1,0 +1,22 @@
+/* alert.component.css */
+.alert {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    z-index: 1000; /* Adjust z-index as needed */
+  }
+  
+  .success {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .error {
+    background-color: #f44336; /* Red */
+  }
+  
