@@ -1,5 +1,6 @@
 // header.tsx
 import { useNavigate } from "react-router-dom";
+import logo_black from "../assets/logo_white.png";
 
 interface HeaderProps {
   background: string;
@@ -10,26 +11,33 @@ function Header({ background }: HeaderProps) {
   return (
     <>
       <div
-        className="flex justify-between bg-[#2A1212] p-5 fixed top-0 text-white w-full"
+        className="flex justify-between bg-[#2A1212] p-5 md:fixed top-0 text-white w-full"
         style={{ backgroundColor: background, zIndex: 1 }}
       >
         <div
-          className="leading-3 cursor-pointer"
+          className="leading-3 cursor-pointer justify-self-center self-center"
           onClick={() => {
             navigate("/");
           }}
         >
-          <p className="text-left text-md">the</p>
-          <p className="font-bold text-lg">WeddingStudio</p>
-          <p className="text-right text-md font-semibold">Hub</p>
+          <img
+            src={logo_black}
+            className="w-[50px] md:w-[150px] md:fixed"
+            alt=""
+          />
         </div>
         <div className="flex self-center space-x-5">
-          <p className="hover:text-[#fecaca] cursor-pointer jost text-[25px]">
+          {/* <p
+            className="hover:text-[#fecaca] cursor-pointer jost text-[25px]"
+            onClick={() => {
+              navigate("/products");
+            }}
+          >
             Products
-          </p>
-          <p className="hover:text-[#fecaca] cursor-pointer jost text-[25px]">
+          </p> */}
+          {/* <p className="hover:text-[#fecaca] cursor-pointer jost text-[25px]">
             Shop
-          </p>
+          </p> */}
           <p
             className="hover:text-[#fecaca] cursor-pointer jost text-[25px]"
             onClick={() => {
@@ -40,7 +48,7 @@ function Header({ background }: HeaderProps) {
           </p>
         </div>
       </div>
-      <div className="self-center text-center flex-col fixed top-[45%] right-[60px] text-white ml-[-20px]">
+      <div className="self-center text-center flex-col hidden md:fixed top-[45%] right-[60px] text-white ml-[-20px]">
         <div>
           {/* <i className="fa-solid fa-arrow-up"></i> */}
           <i className="fa-solid fa-arrow-up-long"></i>
