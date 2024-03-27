@@ -2,12 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .poppins {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
-.jost{
+.jost {
   font-family: "Jost", sans-serif;
+}
+
+.icon-hover:hover {
+  color: white; /* Change the color when hovered */
+}
+
+.animated-icons {
+  animation: slideFromRight 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ul-list {
+  padding: 0 1em;
+  list-style: none;
+}
+.list:before {
+  content: "";
+  border-color: transparent #28af5b;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 1.15em;
+  position: relative;
 }

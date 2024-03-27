@@ -1,32 +1,26 @@
 import { Link } from "react-router-dom";
 import logo_black from "../../../assets/logo/logo_black.png";
+import { IoBagRemoveOutline } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { HiOutlineUser } from "react-icons/hi2";
 
 function Header() {
   return (
-    <div className="bg-gray-100 flex p-2 w-full">
+    <div className="bg-white flex p-2 w-full">
       <div className="flex items-center justify-center w-[40%] space-x-6">
-        <Link
-          to="/"
-          className="hover:text-gray-400 poppins font-medium text-xl"
-        >
+        <Link to="/" className="hover:text-gray-400 jost font-medium text-xl">
           HOME
         </Link>
         <Link
-          to="/"
-          className="hover:text-gray-400 poppins font-medium text-xl"
+          to="/contact-us"
+          className="hover:text-gray-400 jost font-medium text-xl"
         >
-          SHOP
+          CONTACT
         </Link>
-        <Link
-          to="/"
-          className="hover:text-gray-400 poppins font-medium text-xl"
-        >
+        <Link to="/" className="hover:text-gray-400 jost font-medium text-xl">
           FEATURED
         </Link>
-        <Link
-          to="/"
-          className="hover:text-gray-400 poppins font-medium text-xl"
-        >
+        <Link to="/" className="hover:text-gray-400 jost font-medium text-xl">
           PAGES
         </Link>
       </div>
@@ -42,13 +36,14 @@ function Header() {
       </div>
       <div className="flex items-center justify-center space-x-6 w-[40%]">
         <Link to="/">
-          <i className="fa-solid fa-user text-[30px]"></i>
+          <HiOutlineUser className="text-[30px]" />
         </Link>
         <Link to="/">
-          <i className="fa-solid fa-heart text-[30px]"></i>
+          <IoMdHeartEmpty className="text-[30px]" />
         </Link>
         <Link to="/">
-          <i className="fa-solid fa-bag-shopping text-[30px]"></i>
+          {/* <i className="fa-solid fa-bag-shopping text-[30px]"></i> */}
+          <IoBagRemoveOutline className="text-[30px]" />
         </Link>
       </div>
     </div>

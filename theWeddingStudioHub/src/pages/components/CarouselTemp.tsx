@@ -6,7 +6,7 @@ const contentStyle: React.CSSProperties = {
   height: "900px",
   color: "#fff",
   backgroundImage: `url(${carousel1})`,
-  //   backgroundSize: "cover", // Adjust as needed
+  backgroundSize: "cover", // Adjust as needed
   alignItems: "flex-start",
   justifyContent: "end",
 };
@@ -17,7 +17,7 @@ const spacingStyle: React.CSSProperties = {
 function CarouselTemp() {
   return (
     <div>
-      <Carousel>
+      <Carousel autoplay>
         <div>
           <div
             style={contentStyle}
