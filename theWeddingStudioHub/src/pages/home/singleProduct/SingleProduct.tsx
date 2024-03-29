@@ -20,7 +20,7 @@ function SingleProduct() {
       {/* I am in Single Product Page {id} */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-5">
         <div className="col-span-3">
-          <img src={dress1} alt="" />
+          <img src={dress1} alt="" className="h-[80vh]" />
         </div>
         <div className="col-span-2">
           <div className="flex justify-between border-b-[1px] pb-10">

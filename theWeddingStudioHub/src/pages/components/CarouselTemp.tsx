@@ -1,15 +1,4 @@
 import { Carousel } from "antd";
-import carousel1 from "../../assets/carousel1.jpg";
-import carousel2 from "../../assets/carousel2.jpg";
-
-const contentStyle: React.CSSProperties = {
-  height: "900px",
-  color: "#fff",
-  backgroundImage: `url(${carousel1})`,
-  backgroundSize: "cover", // Adjust as needed
-  alignItems: "flex-start",
-  justifyContent: "end",
-};
 
 const spacingStyle: React.CSSProperties = {
   letterSpacing: "5px",
@@ -20,10 +9,13 @@ function CarouselTemp() {
       <Carousel autoplay>
         <div>
           <div
-            style={contentStyle}
-            className="flex flex-col p-[100px] space-y-6"
+            className="flex flex-col justify-end p-[40px] md:p-[100px] space-y-6 h-[500px] md:h-[900px] bg-[url('assets/banner1.jpg')]
+            md:bg-[url('assets/carousel1.jpg')] bg-cover items-start"
           >
-            <p style={spacingStyle} className="text-[38px] font-[400] jost">
+            <p
+              style={spacingStyle}
+              className="text-[38px] font-[400] jost text-white"
+            >
               PREMIUM BRANDS
             </p>
             <p
@@ -41,13 +33,10 @@ function CarouselTemp() {
           </div>
         </div>
         <div>
-          <div
-            style={{ ...contentStyle, backgroundImage: `url(${carousel2})` }}
-            className="flex flex-col p-[100px] space-y-6"
-          >
+          <div className="flex flex-col items-start p-[40px] md:p-[100px] space-y-6 justify-end h-[500px] md:h-[900px] bg-[url('assets/banner2.jpg')] md:bg-[url('assets/carousel2.jpg')] bg-cover">
             <p
               style={spacingStyle}
-              className="text-[38px] font-[400] jost uppercase"
+              className="text-[38px] font-[400] jost uppercase text-white"
             >
               Latest Flavours
             </p>

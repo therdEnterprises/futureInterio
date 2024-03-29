@@ -3,19 +3,26 @@ import dress1 from "../../../assets/collections/dress1.jpg";
 import dress2 from "../../../assets/collections/dress2.jpg";
 function Arrivals() {
   const contentStyle: React.CSSProperties = {
-    height: "800px",
     color: "#fff",
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${dress1})`,
     alignItems: "flex-start",
     justifyContent: "end",
+    backgroundSize: "cover",
   };
+
+  if (window.innerWidth < 768) {
+    contentStyle.height = "500px"; // Set height to 500px for mobile screens
+  }
 
   // const navigate = useNavigate();
 
   return (
     <div className="mr-5 ml-5 md:mr-[15%] md:ml-[15%]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-        <div style={contentStyle} className="flex flex-col p-[50px] space-y-3">
+        <div
+          style={contentStyle}
+          className="flex flex-col p-[50px] space-y-3  h-[500px] md:h-[800px]"
+        >
           <p className="text-[16px] font-[400] text-white uppercase">
             New Collection
           </p>
@@ -32,7 +39,7 @@ function Arrivals() {
             ...contentStyle,
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${dress2})`,
           }}
-          className="flex flex-col p-[50px] space-y-3"
+          className="flex flex-col p-[50px] space-y-3 h-[500px] md:h-[800px]"
         >
           <p className="text-[16px] font-[400] text-white uppercase">
             New Arrival

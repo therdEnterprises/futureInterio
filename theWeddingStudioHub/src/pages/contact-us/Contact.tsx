@@ -1,6 +1,7 @@
 import { FaAngleRight } from "react-icons/fa6";
 import contactCover from "../../assets/contact/contact.jpg";
 import contactMap from "../../assets/contact/contact_us.jpg";
+import { GrInstagram } from "react-icons/gr";
 
 const contentStyle: React.CSSProperties = {
   height: "450px",
@@ -13,6 +14,9 @@ const spacingStyle: React.CSSProperties = {
 };
 
 function Contact() {
+  const handleClick = () => {
+    window.open("https://www.instagram.com/the_weddingstudio_hub/", "_blank");
+  };
   return (
     <div className="space-y-10">
       <div
@@ -32,14 +36,14 @@ function Contact() {
       <div className="mr-5 ml-5 md:mr-[20%] md:ml-[20%]">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-[#f7f7f7]">
           {/* flex flex-wrap items-center */}
-          <div style={{ padding: "0 60px" }} className="self-center">
+          <div style={{ padding: "20px 60px" }} className="self-center">
             <p
               style={{ ...spacingStyle, letterSpacing: `4.8px` }}
               className="text-[14px] font-[400] jost uppercase"
             >
               CONTACT INFORMATION
             </p>
-            <p className="text-transparent inline-flex border-b-[2px] mb-8">
+            <p className="text-transparent inline-flex border-b-[2px] mb-8 border-orange-600">
               -------------
             </p>
             <p className="text-[#969696] text-[14px] jost">
@@ -52,7 +56,7 @@ function Contact() {
             </p>
             <a
               href="mailto:info@therdenterprises.com"
-              className="text-[28px] font-[500] underline"
+              className="text-[20px] md:text-[28px] font-[500] underline"
             >
               info@therdenterprises.com
             </a>
@@ -62,9 +66,15 @@ function Contact() {
             >
               Follow Us
             </p>
-            <p className="text-transparent inline-flex border-b-[2px] mb-8">
+            <p className="text-transparent inline-flex border-b-[2px] mb-8 border-orange-600">
               -------------
             </p>
+            <div>
+              <GrInstagram
+                className="text-[30px] hover:text-[#E4405F] cursor-pointer"
+                onClick={() => handleClick()}
+              />
+            </div>
           </div>
           <div className="">
             <img src={contactMap} alt="" className="w-full" />

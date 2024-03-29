@@ -4,6 +4,7 @@ import SingleProduct from "./pages/home/singleProduct/SingleProduct";
 import Header from "./pages/navigation/header/Header";
 import Contact from "./pages/contact-us/Contact";
 import Footer from "./pages/navigation/footer/Footer";
+import AboutUs from "./pages/about-us/AboutUS";
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/products/:id" element={<SingleProduct />} />
                     <Route path="/contact-us" element={<Contact />} />
+                    <Route path="/about-us" element={<AboutUs />} />
                     {/* Add more routes for other pages if needed */}
                   </Routes>
                   <Footer />
