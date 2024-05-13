@@ -1,7 +1,7 @@
-import { Tooltip } from "antd";
-import { useState } from "react";
-import { IoMdHeartEmpty } from "react-icons/io";
-import { IoBagRemoveOutline, IoSearchOutline } from "react-icons/io5";
+// import { Tooltip } from "antd";
+// import { useState } from "react";
+// import { IoMdHeartEmpty } from "react-icons/io";
+// import { IoBagRemoveOutline, IoSearchOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 interface ProductProps {
@@ -12,14 +12,14 @@ interface ProductProps {
 }
 
 function ProductCards({ image, title, price, route }: ProductProps) {
-  const [hovered, setHovered] = useState(false);
+  // const [hovered, setHovered] = useState(false);
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto relative">
+    <div className="container mx-auto relative cursor-pointer">
       <div
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
+      // onMouseEnter={() => setHovered(true)}
+      // onMouseLeave={() => setHovered(false)}
       >
         <img
           src={image}
@@ -28,7 +28,7 @@ function ProductCards({ image, title, price, route }: ProductProps) {
             navigate(`/products/${route}`);
           }}
         />
-        {hovered && (
+        {/* {hovered && (
           <div className="animated-icons">
             <Tooltip placement="left" title="Quickview">
               <div className="absolute bottom-[50px] lg:bottom-[150px] right-0 p-2 cursor-pointer">
@@ -54,7 +54,7 @@ function ProductCards({ image, title, price, route }: ProductProps) {
               </div>
             </Tooltip>
           </div>
-        )}
+        )} */}
       </div>
 
       <div className="pt-6 text-left">

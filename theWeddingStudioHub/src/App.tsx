@@ -5,10 +5,12 @@ import Header from "./pages/navigation/header/Header";
 import Contact from "./pages/contact-us/Contact";
 import Footer from "./pages/navigation/footer/Footer";
 import AboutUs from "./pages/about-us/AboutUS";
+import Banners from "./pages/components/Banners";
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Banners />
         <div className="App">
           {/*public routes*/}
           <Routes>

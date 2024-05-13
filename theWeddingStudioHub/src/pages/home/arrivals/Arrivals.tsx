@@ -1,6 +1,6 @@
 // import { useNavigate } from "react-router-dom";
-import dress1 from "../../../assets/collections/dress1.jpg";
-import dress2 from "../../../assets/collections/dress2.jpg";
+import dress1 from "../../../assets/1.jpg";
+import dress2 from "../../../assets/modern.jpg";
 function Arrivals() {
   const contentStyle: React.CSSProperties = {
     color: "#fff",

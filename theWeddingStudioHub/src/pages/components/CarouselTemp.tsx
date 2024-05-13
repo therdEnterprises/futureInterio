@@ -10,7 +10,7 @@ function CarouselTemp() {
         <div>
           <div
             className="flex flex-col justify-end p-[40px] md:p-[100px] space-y-6 h-[500px] md:h-[900px] bg-[url('assets/banner1.jpg')]
-            md:bg-[url('assets/carousel1.jpg')] bg-cover items-start"
+            md:bg-[url('assets/glam.jpg')] bg-cover items-start"
           >
             <p
               style={spacingStyle}
@@ -24,12 +24,12 @@ function CarouselTemp() {
             >
               YOUR BIG DAY TRULY MEANS THE WORLD TO US
             </p>
-            <button
+            {/* <button
               style={{ ...spacingStyle, letterSpacing: `1px` }}
               className="px-[40px] py-[15px] bg-[#e9ac98] text-white text-[14px] font-bold hover:bg-black"
             >
               SHOP NOW
-            </button>
+            </button> */}
           </div>
         </div>
         <div>
@@ -46,12 +46,12 @@ function CarouselTemp() {
             >
               WE DESIGN DRESSES WORTH CHERISHING FOREVER
             </p>
-            <button
+            {/* <button
               style={{ ...spacingStyle, letterSpacing: `1px` }}
               className="px-[40px] py-[15px] bg-[#e9ac98] text-white text-[14px] font-bold hover:bg-black"
             >
               SHOP NOW
-            </button>
+            </button> */}
           </div>
         </div>
       </Carousel>

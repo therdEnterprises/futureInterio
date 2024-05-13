@@ -20,7 +20,7 @@ function SingleProduct() {
       {/* I am in Single Product Page {id} */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-5">
         <div className="col-span-3">
-          <img src={dress1} alt="" className="h-[80vh]" />
+          <img src={dress1} alt="" className="md:h-[80vh]" />
         </div>
         <div className="col-span-2">
           <div className="flex justify-between border-b-[1px] pb-10">
@@ -30,11 +30,11 @@ function SingleProduct() {
                 $550.00 USD
               </p>
             </div>
-            <div className="cursor-pointer">
+            {/* <div className="cursor-pointer">
               <div className="w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rounded-full border bg-white icon-hover flex items-center justify-center hover:bg-[#e9ac98]">
                 <IoMdHeartEmpty className="text-[15px] lg:text-[20px]" />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="pt-5">
             <p className="text=[15px] jost text-[#969696]">
@@ -50,7 +50,7 @@ function SingleProduct() {
             </p>
             <ul className="text-[#28af5b] font-semibold ul-list">
               <li className="list">In Stock</li>
-              <li className="list">Free delivery available*</li>
+              {/* <li className="list">Free delivery available*</li> */}
               <li className="list">Sale 30% Off Use Code: Deal30</li>
             </ul>
           </div>

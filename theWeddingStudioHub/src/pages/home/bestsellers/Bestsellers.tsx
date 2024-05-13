@@ -1,12 +1,12 @@
 import ProductCards from "../../components/ProductCards";
-import dress1 from "../../../assets/collections/dress1.jpg";
-import dress2 from "../../../assets/collections/dress2.jpg";
-import dress3 from "../../../assets/collections/dress3.jpg";
-import dress4 from "../../../assets/collections/dress4.jpg";
-import dress5 from "../../../assets/collections/dress5.jpg";
-import dress6 from "../../../assets/collections/dress6.jpg";
-import dress7 from "../../../assets/collections/dress7.jpg";
-import dress8 from "../../../assets/collections/dress8.jpg";
+import dress1 from "../../../assets/collections/1.jpg";
+import dress2 from "../../../assets/collections/2.jpg";
+import dress3 from "../../../assets/collections/3.jpg";
+import dress4 from "../../../assets/collections/4.jpg";
+import dress5 from "../../../assets/collections/5.jpg";
+import dress6 from "../../../assets/collections/6.jpg";
+import dress7 from "../../../assets/collections/7.jpg";
+import dress8 from "../../../assets/collections/8.jpg";
 
 const spacingStyle: React.CSSProperties = {
   letterSpacing: "1px",
